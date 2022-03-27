@@ -1,0 +1,120 @@
+{
+    /* "extends": "./configs/base", Загрузить другой конфигурационный файл "tsconfig.json", взятый за основу, и перезаписать 
+    его значениями из секций ниже. */
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "es6",
+        "outDir": "./dist",
+        // Настройки для поиска @types
+        "typeRoots": [
+            "./types"
+        ],
+        "types": ["node"], /* Если указан параметр "types", то из всех найденных будут использованы только те 
+        описания типов, что указаны в его массиве, а именно: "./typings/node", "./typings/lodash", "./typings/express".
+        Другие найденные типы использоваться не будут.
+        Задание "types": [] приведет к отключению автоматического использования описаний типов из папок "@types". */
+        "rootDir": "src", /* Путь до папки с которой надо начинать поиск входных файлов. Обычно корневая директория 
+        вычисляется по списку входных файлов. Данная опция необходима для проверки, что все найденные TypeScript-файлы 
+        находятся внутри корневой папки.*/
+        "rootDirs": [
+            "components",
+            "scripts",
+        ],
+        "baseUrl": ".",
+        "build": false,
+        "composite": true,
+        "paths": {
+            "jquery": [
+                "node_modules/jquery/dist/jquery"
+            ] // Путь относительно "baseUrl".
+        },
+        "lib": [
+            "dom",
+            "es5",
+            "es6",
+            "es2015.promise",
+            "es2016.array.include"
+        ], // Набор библиотечных файлов полифилов, которые будут включены в итоговый выходной файл.
+        "jsx": "react",
+        "jsxFactory": "React.createElement",
+        "allowJs": true,
+        "alwaysStrict": false,
+        "checkJs": true,
+        "downlevelIteration": true,
+        "importHelpers": false,
+        "noEmitOnError": true,
+        "noEmitHelpers": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitUseStrict": false,
+        "pretty": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strict": true, /* Включить ли все строги проверки типов сразу: noImplicitAny, noImplicitThis, alwaysStrict, 
+        strictNullChecks, strictFunctionTypes, strictPropertyInitialization? */
+
+        "strictNullChecks": false,
+        "target": "es5",
+        "watch": true,
+        // Дополнительные настройки.
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "allowUmdGlobalAccess": false,
+        "assumeChangesOnlyAffectDirectDependencies": false,
+        "charset": "utf8",
+        "declaration": true,
+        "declarationDir": "src/types",
+        "declarationMap": false,
+        "diagnostics": false,
+        "disableSizeLimit": false,
+        "emitBOM": false,
+        "emitDeclarationOnly": false,
+        "emitDecoratorMetadata": false,
+        "esModuleInterop": true,
+        "experimentalDecorators": false,
+        "extendedDiagnostics": false,
+        "forceConsistentCasingInFileNames": false,
+        "inlineSources": false,
+        "inlineSourceMap": false,
+        "isolatedModules": false,
+        "listFiles": false,
+        "listEmittedFiles": false,
+        "mapRoot": ".",
+        "maxNodeModuleJsDepth": 0,
+        "moduleResolution": "node",
+        "newLine": "CRLF",
+        "noEmit": false,
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": false,
+        "noLib": false,
+        "noResolve": false, // Не добавлять "/// <reference path="..." />" в список скомпилированных файлов.
+        "noStrictGenericChecks": false, // Отключить строгую проверку типов джинериков в типах функций?
+        "plugins": [],
+        "preserveConstEnums": false,
+        "preserveSymlinks": false,
+        "resolveJsonModule": true,
+        "sourceRoot": ".",
+        "skipLibCheck": false,
+        "skipDefaultLibCheck": false,
+        "suppressExcessPropertyErrors": false,
+        "suppressImplicitAnyIndexErrors": false,
+        "stripInternal": false,
+        "strictFunctionTypes": false,
+        "strictPropertyInitialization": false,
+        "traceResolution": false
+    },
+    "files": [
+        "src/index.js",
+    ],
+    "include": [
+        "src/scripts/*",
+        "src/components/*",
+    ],
+    "exclude": [
+        "src/**/*.spec.ts",
+        "node_modules",
+    ]
+}

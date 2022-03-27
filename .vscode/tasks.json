@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "webpack-build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: webpack-build",
+			"detail": "webpack --config ./webpack/webpack.build.conf.js"
+		}
+	]
+}

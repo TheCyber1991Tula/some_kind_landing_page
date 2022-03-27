@@ -1,0 +1,114 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "project": ["./tsconfig.json"],
+        "tsconfigRootDir": ".",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "babel",
+        "import",
+        "jsx-a11y",
+        "react",
+        "react-hooks",
+        "prettier",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "func-names": "off",
+        "array-callback-return": "off",
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "arrow-body-style": "off",
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": [
+                    "Link"
+                ],
+                "specialLink": [
+                    "hrefLeft",
+                    "hrefRight"
+                ],
+                "aspects": [
+                    "noHref",
+                    "invalidHref",
+                    "preferButton"
+                ]
+            }
+        ],
+        "implicit-arrow-linebreak": [
+            "error",
+            "beside"
+        ],
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "lines-around-directive": [
+            "error",
+            "never"
+        ],
+        "max-len": ["error", { "code": 140, "tabWidth": 4 }],
+        "no-alert": "off",
+        "no-console": "off",
+        "no-loop-func": "off",
+        "no-eval": "error",
+        "react/prefer-stateless-function": [0, { "ignorePureComponents": false }],
+        "no-constant-condition": "off",
+        "no-extra-semi": "off",
+        "no-param-reassign": "off",
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-restricted-syntax": ["error", "WithStatement", "BinaryExpression[operator='in']"],
+        "no-trailing-spaces": ["error", { "skipBlankLines": true, "ignoreComments": true }],
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "prefer-template": "error",
+        "react/jsx-indent": [
+            2,
+            4,
+            {
+                "checkAttributes": false
+            }
+        ],
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+        "react/jsx-tag-spacing": [2, {
+            "closingSlash": "never",
+            "beforeSelfClosing": "always",
+            "afterOpening": "never",
+            "beforeClosing": "never"
+        }],
+        "react/prop-types": [1, {}],
+        "react/state-in-constructor": "off",
+        "space-before-blocks": "error",
+        "quote-props": "off",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "strict": "off"
+    }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Orbit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+    <header>
+        <p class="general_text">yourcompanyname</p>
+    </header>
+    <nav>
+        <ul class="links-panel_horizontal">
+            <li class="links-panel-horizontal__list-Item">home</li>
+            <li class="links-panel-horizontal__list-Item">about</li>
+            <li class="links-panel-horizontal__list-Item">services</li>
+            <li class="links-panel-horizontal__list-Item">testimonials</li>
+            <li class="links-panel-horizontal__list-Item">portfolio</li>
+            <li class="links-panel-horizontal__list-Item">contacts</li>
+        </ul>
+    </nav>
+
+    <div class="company-logo">
+        <h2 class="heading_general">welcome to</h2>
+        <h3 class="heading_general">yourcompanyname</h3>
+    </div>
+
+    <div class="our-team-leaders flex_col">
+        <h2 class="our-team-leaders__heading heading_general">our team leaders</h2>
+        <hr class="hr-divider">
+        <p class="text_general">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a ante nec elit cursus ullamcorper. Integer fermentum interdum ultricies. Duis volutpat placerat turpis. Nam tristique commodo metus, et sodales purus sollicitudin ac. Sed rhoncus diam id nibh porttitor aliquam. Ut blandit turpis ante, a efficitur tellus pellentesque vitae. Nam mattis, sapien sed fermentum malesuada, elit mi consectetur nulla, ac elementum est odio vel augue.</p>
+
+        <div class="flex_row__cards">
+            <div class="our-team-leaders__cards__card">
+                <div class="our-team-leaders__cards__card__photo">
+                    <img src="" alt="hugo silva">
+                </div>
+                <h6 class="heading_general">hugo silva</h6>
+                <p class="our-team-leaders__cards__card__description text_micro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet sapiente impedit est dignissimos dolore porro incidunt, consectetur fuga quo cum ea quasi debitis voluptate odio illo aliquid consequuntur, error rem.</p>
+            </div>
+
+            <div class="our-team-leaders__cards__card">
+                <div class="our-team-leaders__cards__card__photo">
+                    <img src="" alt="imanol arias">
+                </div>
+                <h6 class="heading_general">imanol arias</h6>
+                <p class="our-team-leaders__cards__card__description text_micro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet sapiente impedit est dignissimos dolore porro incidunt, consectetur fuga quo cum ea quasi debitis voluptate odio illo aliquid consequuntur, error rem.</p>
+            </div>
+
+            <div class="our-team-leaders__cards__card">
+                <div class="our-team-leaders__cards__card__photo">
+                    <img src="" alt="javier bardem">
+                </div>
+                <h6 class="heading_general">javier bardem</h6>
+                <p class="our-team-leaders__cards__card__description text_micro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet sapiente impedit est dignissimos dolore porro incidunt, consectetur fuga quo cum ea quasi debitis voluptate odio illo aliquid consequuntur, error rem.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <div class="advantages__heading">
+            <div class="stats__item">
+                <h2 class="stats__item__heading heading_general">2500</h2>
+                <p class="stats__item__text">happy clients</p>
+            </div>
+
+            <div class="stats__item">
+                <h2 class="stats__item__heading heading_general">300</h2>
+                <p class="stats__item__text">full notebooks</p>
+            </div>
+
+            <div class="stats__item">
+                <h2 class="stats__item__heading heading_general">120</h2>
+                <p class="stats__item__text">teammates</p>
+            </div>
+
+            <div class="stats__item">
+                <h2 class="stats__item__heading heading_general">30</h2>
+                <p class="stats__item__text">stores</p>
+            </div>
+        </div>
+
+        <div class="advantages__image">
+            <!--image as background-->
+        </div>
+    </div>
+
+    <div class="contact-us flex_col">
+        <h2 class="contact-us__heading heading_general">contact us</h2>
+        <p class="contact-us__text text_micro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque mollitia incidunt aliquam nostrum deserunt voluptatem facere. Velit architecto pariatur ratione officia omnis. Distinctio culpa et fuga voluptates nulla? Dolorem, nostrum.</p>
+
+        <div class="contact-us__form__wrap">
+            <!--display flex, flex direction column-->
+            <form action="#" method="post">
+                <div class="contact-us__form__row">
+                    <input class="contact-us__form__item text_micro" type="text" placeholder="Name">
+                    <select class="contact-us__form__item text_micro" name="category_name" id="category">
+                        <option value="some value 1">Category 1</option>
+                        <option value="some value 2">Category 2</option>
+                        <option value="some value 3">Category 3</option>
+                    </select>
+                </div>
+    
+                <div class="contact-us__form__row">
+                    <input class="contact-us__form__item text_micro" type="phone" placeholder="Phone">
+                    <select class="contact-us__form__item text_micro" name="country_name" id="country">
+                        <option value="ru">Russia</option>
+                        <option value="by">Belarus</option>
+                        <option value="ua">Ukraine</option>
+                    </select>
+                </div>
+    
+                <input class="contact-us__form__item" type="email" placeholder="E-Mail">
+    
+                <textarea name="form-message" id="message" cols="30" rows="10"></textarea>
+
+                <button class="contact-us__form__submit" type="submit">contact us</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="about-us__wrap">
+        <!--display flex, flex direction row-->
+        <div class="about-us__logo">
+            <!--image as background-->
+        </div>
+
+        <div class="about-us__description">
+            <!--display flex, flex direction column-->
+
+            <h4 class="about-us__description__heading heading_general">about us</h4>
+            <p class="about-us__description__text text_micro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem illum ipsa animi blanditiis aperiam porro veritatis! Reprehenderit, laudantium autem reiciendis, tenetur tempore iusto quibusdam aliquid nobis, minus vitae error.</p>
+
+            <div class="flex_row__cards">
+                <!--display flex, flex direction row-->
+
+                <div class="about-us__description__card">
+                    <img src="#" alt=""><!--border radius 50%-->
+                    <p class="text_micro">friendly team</p>
+                </div>
+
+                <div class="about-us__description__card">
+                    <img src="#" alt=""><!--border radius 50%-->
+                    <p class="text_micro">involved</p>
+                </div>
+
+                <div class="about-us__description__card">
+                    <img src="#" alt=""><!--border radius 50%-->
+                    <p class="text_micro">24/7 assistance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-gallery flex_col">
+        <h2 class="our-gallery__heading heading_general">our gallery</h2>
+        <p class="our-gallery__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, magnam! Fuga temporibus totam neque. Quae corporis fugiat dolorum quam optio. Unde inventore quos cum odit dolorum, quae sit tenetur veniam.</p>
+
+        <!--slider-->
+    </div>
+
+    <footer>
+        <div class="footer__top flex_row">
+            <div class="footer__item">
+                <h6 class="footer__item__heading text_micro text_uppercase">content</h6>
+    
+                <ul class="footer__item__list">
+                    <li class="footer__item__list__list-item"><a href="#">lorem ipsum</a></li>
+                    <li class="footer__item__list__list-item"><a href="#">dolor sit</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__item">
+                <h6 class="footer__item__heading text_micro text_uppercase">information</h6>
+    
+                <ul class="footer__item__list">
+                    <li class="footer__item__list__list-item"><a href="#">lorem ipsum</a></li>
+                    <li class="footer__item__list__list-item"><a href="#">dolor sit</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__item">
+                <h6 class="footer__item__heading text_micro text_uppercase">legal</h6>
+    
+                <ul class="footer__item__list">
+                    <li class="footer__item__list__list-item"><a href="#">lorem ipsum</a></li>
+                    <li class="footer__item__list__list-item"><a href="#">dolor sit</a></li>
+                    <li class="footer__item__list__list-item"><a href="#">amet consectetur</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__item">
+                <h6 class="footer__item__heading text_micro text_uppercase">help</h6>
+    
+                <ul class="footer__item__list">
+                    <li class="footer__item__list__list-item"><a href="#">lorem ipsum</a></li>
+                    <li class="footer__item__list__list-item"><a href="#">dolor sit</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__item">
+                <div class="footer__item__contact">
+                    <img src="#" alt=""><!--phone.png-->
+                    <p class="text_micro">3-6000-0000</p>
+                </div>
+    
+                <div class="footer__item__contact">
+                    <img src="#" alt=""><!--map.png-->
+                    <p class="text_micro">67700 Dagenham St England, GB</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom flex_row">
+            <p class="text_micro">Copyright © 2019 . Your companyname  All rights reserved</p>
+
+            <div class="footer__bottom__socials flex_row">
+                <ul class="links-panel_horizontal">
+                    <li><a href="#"><img src="assets/google+.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/facebook.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
