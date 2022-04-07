@@ -1,0 +1,53 @@
+.advantages{
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #0A2D35;
+
+	.advantages__content{
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		.advantages__content__item{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 25%;
+
+			h2.advantages__content__item__heading{
+				color: #995437;
+				font:{
+					size: 60px;
+					family: 'Vani';
+					weight: bold;
+				};
+			}
+
+			p.advantages__content__item__text{
+				text-align: center;
+				text-transform: uppercase;
+				color: #F6F6F7;
+				font:{
+					size: 20px;
+					family: 'Myriad Pro';
+					weight: normal;
+				};
+			}
+		}
+	}
+}
+
+.advantages_post__image{
+	background: url('img/decisiones-en-los-negocios.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 800px;
+}

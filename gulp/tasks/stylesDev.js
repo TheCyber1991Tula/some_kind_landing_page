@@ -18,8 +18,8 @@ const config = {
 };
 
 // * описание таска
-const stylesDev = () =>
-    gulp
+const stylesDev = () => {
+        gulp
         .src(paths.styles.src)
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -30,5 +30,6 @@ const stylesDev = () =>
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(browserSync.stream());
+}
 
 export default stylesDev;

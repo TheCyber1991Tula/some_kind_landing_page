@@ -39,7 +39,7 @@ module.exports = smp.wrap({
         paths: PATHS,
     },
     entry: {
-        app: `${PATHS.src}/index.tsx`,
+        app: `${PATHS.src}/index.js`,
     },
     output: {
         filename: '[name].js',
@@ -153,6 +153,7 @@ module.exports = smp.wrap({
             '@Components': join(__dirname, 'src/components'),
             '@Scripts': join(__dirname, 'src/scripts'),
             '@Styles': join(__dirname, 'src/assets/styles'),
+            '@Images': join(__dirname, 'src/assets/img'),
         },
     },
     plugins:

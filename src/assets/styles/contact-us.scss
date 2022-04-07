@@ -1,0 +1,71 @@
+.contact-us{
+	width: 100%;
+	height: auto;
+	padding-top: 200px;
+	background: #0A2E36;
+	align-items: center;
+
+	.contact-us__heading__wrap{
+		justify-content: center;
+		align-items: center;
+		width: 30%;
+
+		h2.contact-us__heading{
+				color: white;
+				line-height: 1.979;
+				font:{
+					family: 'Athelas';
+					size: 48px;
+				};
+			}
+
+		p.contact-us__text{
+			text-align: center;
+			color: #7C898D;
+			font: {
+				family: 'Myriad Pro';
+				size: 20px;
+			};
+		}
+	}
+
+	.contact-us__form__wrap__form{
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1f 3fr 1fr;
+		grid-template-areas: 'name category'
+							'phone country'
+							'email email'
+							'message message'
+							'submit submit';
+
+		#contact-us_name{
+			grid-area: name;
+		}
+
+		#contact-us_category{
+			grid-area: category;
+		}
+
+		#contact-us_phone{
+			grid-area: phone;
+		}
+
+		#contact-us_country{
+			grid-area: country;
+		}
+
+		#contact-us_email{
+			grid-area: email;
+		}
+
+		#contact-us_message{
+			grid-area: message;
+		}
+
+		#contact-us_submit{
+			grid-area: submit;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 const paths = {
     'styles': {
-        'src': 'src/assets/styles/index.scss',
+        'src': 'src/assets/styles/*.scss',
         'dest': 'dist/',
     },
     'scripts': {
@@ -23,4 +23,4 @@ const paths = {
     },
 };
 
-export default paths
+export default paths;

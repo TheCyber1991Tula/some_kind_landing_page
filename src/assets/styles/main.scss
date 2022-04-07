@@ -1,0 +1,68 @@
+body{
+    min-width: 1920px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.links-panel_horizontal{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.text_general{
+    text-transform: uppercase;
+    font: {
+        family: 'Open Sans Bold';
+        weight: bold;
+    }
+}
+
+.text_micro{
+    font: {
+        family: 'Open Sans Bold';
+        size: 12px;
+    }
+}
+
+.text_bordered{
+    font:{
+        family: 'Myriad Pro';
+        size: 24px;
+    };
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.text_uppercase{
+    text-transform: uppercase;
+}
+
+.heading_general{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}

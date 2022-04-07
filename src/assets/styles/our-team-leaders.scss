@@ -1,0 +1,74 @@
+.our-team-leaders{
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	background: white;
+
+	.our-team-leaders__content{
+		width: 80%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+
+		h2{
+			color: #C06037;
+			font:{
+				family: 'Glowgirl Regular';
+				size: 37px;
+				weight: bold;
+			};
+		}
+
+		.hr-divider{
+			width: 280px;
+			height: 2px;
+			color: #C06037;
+			margin-bottom: 100px;
+		}
+
+		p{
+			width: 85%;
+			text-align: center;
+			font:{
+				family: 'Roboto Bold';
+				size: 19px;
+			};
+		}
+	}
+
+	.our-team-leaders__cards{
+		width: 85%;
+		margin-top: 100px;
+		margin-bottom: 200px;
+		justify-content: space-between;
+
+		.our-team-leaders__cards__card{
+			width: 30%;
+			height: auto;
+			justify-content: center;
+			align-items: center;
+
+			h6{
+				text-transform: capitalize;
+				margin-top: 30px;
+				text-align: center;
+				font:{
+					family: 'Roboto Bold';
+					size: 25px;
+				};
+			}
+
+			p.our-team-leaders__cards__card__description{
+				margin-top: 30px;
+				text-align: center;
+				width: 70%;
+				font:{
+					family: 'Roboto Bold';
+					size: 20px;
+				};
+			}
+		}
+	}
+}

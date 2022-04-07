@@ -1,0 +1,27 @@
+.company-logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: flex-end;
+	width: 100%;
+	height: 600px;
+	padding-right: 100px;
+	padding-bottom: 60px;
+	background: #B6BDBF;
+
+	h2{
+		color: #FDF9F7;
+		font:{
+			size: 60px;
+			family: 'Glowgirl Regular';
+		};
+	}
+
+	h3{
+		color: #F07C4A;
+		font:{
+			size: 38px;
+			family: 'Glowgirl Regular';
+		};
+	}
+}

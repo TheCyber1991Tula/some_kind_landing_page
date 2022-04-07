@@ -1,0 +1,36 @@
+nav{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	width: 100%;
+	height: 100px;
+	background: #888E8F;
+
+	li{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-right: 50px;
+		padding-left: 50px;
+		height: 100%;
+		list-style: none;
+		text-transform: uppercase;
+
+		a{
+			text-decoration: none;
+			color: white;
+			font: {
+				family: 'Roboto Bold';
+				size: 27px;
+			}
+		}
+
+		&:hover{
+			color: white;
+			background: #759199;
+			cursor: pointer;
+		}
+	}
+}

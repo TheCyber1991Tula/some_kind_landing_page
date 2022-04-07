@@ -1,0 +1,28 @@
+.our-gallery{
+	background: linear-gradient(45deg, #D6D0DED0, #96B6DED0);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: auto;
+	height: auto;
+	padding-top: 200px; 
+
+	h2.our-gallery__heading{
+		margin-bottom: 100px;
+		color: #C1623A;
+		font:{
+			family: 'Athelas';
+			size: 56px;
+		};
+	}
+
+	p.our-gallery__text{
+		margin: 0 auto;
+		width: 60%;
+		text-align: center;
+		color: black;
+		font:{
+			family: 'Glowgirl Regular';
+			size: 42px;
+		};
+	}
+}
