@@ -158,6 +158,17 @@ module.exports = smp.wrap({
     },
     plugins:
         process.env.MODE === 'production' ? [ new CleanWebpackPlugin(),
-            new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+            new HtmlWebpackPlugin({
+                template: `${PATHS.htmlPages}/index.html`,
+                filename: './index.html',
+                minify: process.env.MODE === 'production' ? true : false,
+                favicon: 'assets/favicon.png',
+                meta: {
+                    viewport: 'width=device-width, initial-scale=1.0, shrink-to-fit=no',
+                    'X-UA-Compatible': 'IE=edge',
+                    charset: 'UTF-8',
+                },
+            }),
+            new MiniCssExtractPlugin({ filename: 'style.css' }),
         ] : getPlugins(),
 });
