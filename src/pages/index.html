@@ -96,8 +96,8 @@
             <p class="contact-us__text text_micro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque mollitia incidunt aliquam nostrum deserunt voluptatem facere.</p>
         </div>
 
-        <div class="contact-us__form__wrap">
-            <form class="contact-us__form__wrap__form" action="#" method="post">
+        <div class="contact-us__form__wrap flex_col">
+            <form id="contact-us__form__wrap__form" action="#" method="post">
                 <input class="contact-us__form__item text_micro" type="text" id="contact-us_name" placeholder="Name">
                 <select class="contact-us__form__item text_micro" name="category_name" id="contact-us_category">
                     <option value="some value 1">Category 1</option>
@@ -111,14 +111,16 @@
                     <option value="by">Belarus</option>
                     <option value="ua">Ukraine</option>
                 </select>
-            </div>
 
-            <input class="contact-us__form__item" type="email" placeholder="E-Mail" id="contact-us_email">
+                <input class="contact-us__form__item" type="email" placeholder="E-Mail" id="contact-us_email">
 
-            <textarea name="form-message" id="contact-us_message" cols="30" rows="10"></textarea>
+                <input id="contact-us_message" placeholder="Message"></input>
 
-            <button class="contact-us__form__submit" type="submit" id="contact-us_submit">contact us</button>
-        </form>
+                <div class="contact-us__form__submit__button-wrap flex_row">
+                    <button class="contact-us__form__submit" type="submit" id="contact-us_submit">contact us</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="about-us__wrap flex_row">

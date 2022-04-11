@@ -5,6 +5,18 @@ footer{
 	align-items: center;
 	justify-content: space-evenly;
 
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
+	}
+
 	.footer__top{
 		width: 88%;
 		min-height: 200px;
@@ -17,6 +29,10 @@ footer{
 			width: 15%;
 			min-height: 90%;
 
+			@media screen and(max-width: 1024px) {
+				width: 13%;
+			}
+
 			h6.footer__item__heading{
 				margin-bottom: 25px;
 				color: white;
@@ -25,7 +41,19 @@ footer{
 					size: 24px;
 					weight: bold;
 				};
+
+				@media screen and(max-width: 1024px) {
+					font: {
+						size: 20px;
+					};
+				}
 			}
+
+			&:nth-child(5){
+				width: 20%;
+				height: 100%;
+				justify-content: space-around;
+			};
 
 			.footer__item__list{
 				justify-content: flex-start;
@@ -39,6 +67,14 @@ footer{
 						size: 19px;
 						weight: normal;
 					};
+
+					@media screen and(max-width: 1024px) {
+						letter-spacing: 2px;
+						line-height: 20px;
+						font: {
+							size: 13px;
+						};
+					}
 				}
 			}
 
@@ -73,6 +109,10 @@ footer{
 			justify-content: space-between;
 			align-items: center;
 
+			@media screen and(max-width: 720px) {
+				flex-direction: column;
+			}
+
 			p{
 				color: white;
 				font:{
@@ -82,11 +122,14 @@ footer{
 				};
 			}
 			
-
 			.footer__bottom__socials{
 				justify-content: space-evenly;
 				align-items: center;
 				min-width: 200px;
+
+				@media screen and(max-width: 720px) {
+					padding-bottom: 30px;
+				}
 
 				ul{
 					display: flex;

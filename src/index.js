@@ -11,8 +11,6 @@ import '@Fonts/Vani.ttf';
 import '@Fonts/Myriad Pro.ttf';
 import '@Fonts/AthelasArabic-Regular.woff2';
 
-import '@Scripts/script.js';
-
 import '@Styles/about-us.scss';
 import '@Styles/advantages.scss';
 import '@Styles/company-logo.scss';
@@ -34,11 +32,16 @@ import '@Images/phone.png';
 import '@Images/twitter.png';
 import '@Images/instagram.png';
 import '@Images/map.png';
-import '@Images/decisiones-en-los-negocios.png';
+import '@Images/decisiones-en-los-negocios_1920.png';
+import '@Images/decisiones-en-los-negocios_1440.jpg';
+import '@Images/decisiones-en-los-negocios_1024.jpg';
 import '@Images/Hands_Stock-150x150.jpg';
 import '@Images/menschengruppe_klein.png';
 import '@Images/shutterstock_116037967-Converted-150x150.jpg';
-import '@Images/garantia-big.jpg';
+import '@Images/garantia-big_1000.jpg';
+import '@Images/garantia-big_720.jpg';
+import '@Images/garantia-big_520.jpg';
 import '@Images/Website-Venture_Capitalist-1.jpg';
 import '@Images/pexels-fauxels-3184292.jpg';
 import '@Images/slide2.jpg';
+import '@Images/hakkimizda.jpg';

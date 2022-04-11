@@ -14,12 +14,48 @@
 		justify-content: space-between;
 		align-items: center;
 
+		@media screen and(max-width: 1440px) {
+			width: 80%;
+		}
+
+		@media screen and(max-width: 1024px) {
+			width: 80%;
+		}
+
+		@media screen and(max-width: 720px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-template-areas: 'happyClients fullNotebooks'
+								'teammates stores';
+		}
+
 		.advantages__content__item{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			width: 25%;
+
+			@media screen and(max-width: 720px) {
+				height: 150px;
+
+				&:nth-child(1){
+					grid-area: happyClients; 
+				};
+
+				&:nth-child(2){
+					grid-area: fullNotebooks; 
+				};
+
+				&:nth-child(3){
+					grid-area: teammates; 
+				};
+
+				&:nth-child(4){
+					grid-area: stores; 
+				};
+			}
 
 			h2.advantages__content__item__heading{
 				color: #995437;
@@ -28,6 +64,13 @@
 					family: 'Vani';
 					weight: bold;
 				};
+
+				@media screen and(max-width: 720px) {
+					margin: 0;
+					font: {
+						size: 48px;
+					};
+				}
 			}
 
 			p.advantages__content__item__text{
@@ -39,15 +82,53 @@
 					family: 'Myriad Pro';
 					weight: normal;
 				};
+
+				@media screen and(max-width: 720px) {
+					margin: 0;
+				}
 			}
 		}
+	}
+
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
+		height: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
 .advantages_post__image{
-	background: url('img/decisiones-en-los-negocios.png');
+	background: url('img/decisiones-en-los-negocios_1920.png'), linear-gradient(90deg, #071137, #060C2D);
 	background-repeat: no-repeat;
+	background-blend-mode: lighten;
 	background-position: center center;
 	width: 100%;
 	height: 800px;
+
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+		height: 600px;
+		background: url('img/decisiones-en-los-negocios_1440.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+		height: 427px;
+		background: url('img/decisiones-en-los-negocios_1024.jpg');
+	}
+
+	@media screen and(max-width: 720px) {
+		display: none;
+	}
 }

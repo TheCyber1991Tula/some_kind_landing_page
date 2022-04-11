@@ -14,5 +14,27 @@ header{
 		font:{
 			size: 30px;
 		};
+
+		@media screen and(max-width: 1024px) {
+		font:{
+			size: 25px;
+		};
+	}
+	}
+
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+		font:{
+			size: 25px;
+		};
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
+		height: auto;
 	}
 }

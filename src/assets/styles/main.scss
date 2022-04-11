@@ -1,5 +1,17 @@
 body{
     min-width: 1920px;
+
+    @media screen and (max-width: 1440px) {
+        width: 1400px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        min-width: 1024px;
+    }
+
+    @media screen and (max-width: 720px) {
+        min-width: 720px;
+    }
 }
 
 a{
@@ -46,6 +58,27 @@ li{
     padding: 5px 20px 5px 20px;
     border: 1px solid black;
     border-radius: 1px;
+
+    @media screen and(max-width: 1440px) {
+        font: {
+            size: 16px;
+        };
+        padding: 5px 10px 5px 10px;
+    }
+
+    @media screen and(max-width: 1024px) {
+        font: {
+            size: 14px;
+        };
+        padding: 5px;
+    }
+
+    @media screen and(max-width: 720px) {
+        font: {
+            size: 14px;
+        };
+        padding: 0;
+    }
 }
 
 .text_uppercase{

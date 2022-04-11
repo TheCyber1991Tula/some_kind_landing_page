@@ -6,6 +6,20 @@
 	height: auto;
 	padding-top: 200px; 
 
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+		padding-top: 100px;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+		padding-top: 60px;
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
+	}
+
 	h2.our-gallery__heading{
 		margin-bottom: 100px;
 		color: #C1623A;
@@ -13,6 +27,18 @@
 			family: 'Athelas';
 			size: 56px;
 		};
+
+		@media screen and(max-width: 1440px) {
+			font: {
+				size: 45px;
+			};
+		}
+
+		@media screen and(max-width: 1024px) {
+			font: {
+				size: 35px;
+			};
+		}
 	}
 
 	p.our-gallery__text{
@@ -24,5 +50,17 @@
 			family: 'Glowgirl Regular';
 			size: 42px;
 		};
+
+		@media screen and(max-width: 1440px) {
+			font: {
+				size: 30px;
+			};
+		}
+
+		@media screen and(max-width: 1024px) {
+			font: {
+				size: 26px;
+			};
+		}
 	}
 }

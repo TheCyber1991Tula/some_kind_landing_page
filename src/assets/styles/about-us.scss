@@ -7,12 +7,46 @@
 	margin-top: 150px;
 	margin-bottom: 150px;
 
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
+	}
+
 	.about-us__logo{
 		min-width: 50%;
 		width: 60%;
 		height: 500px;
-		background: url('img/garantia-big.jpg');
+		background: url('img/garantia-big_1000.jpg');
 		background-repeat: no-repeat;
+
+		@media screen and(max-width: 1440px) {
+			width: 720px;
+			height: 360px;
+			background: url('img/garantia-big_720.jpg');
+			background-repeat: no-repeat;
+		}
+
+		@media screen and(max-width: 1024px) {
+			width: 640px;
+			height: 320px;
+			background: url('img/garantia-big_520.jpg');
+			background-repeat: no-repeat;
+		}
+
+		@media screen and(max-width: 720px) {
+			display: none;
+		}
 	}
 
 	.about-us__description{
@@ -23,6 +57,21 @@
 		justify-content: center;
 		align-items: center;
 
+		@media screen and(max-width: 1440px) {
+			width: 45%;
+			height: 360px;
+		}
+
+		@media screen and(max-width: 1024px) {
+			width: 50%;
+			height: 320px;
+		}
+
+		@media screen and(max-width: 720px) {
+			width: 100%;
+			height: 320px;
+		}
+
 		h4.about-us__description__heading{
 			color: black;
 			font:{
@@ -30,6 +79,18 @@
 				size: 48px;
 				weight: bold;
 			};
+
+			@media screen and(max-width: 1440px) {
+				font: {
+					size: 28px;
+				};
+			}
+
+			@media screen and(max-width: 1024px) {
+				font:{
+					size: 24px;
+				};
+			}
 		}
 
 		p.about-us__description__text{
@@ -38,6 +99,12 @@
 				family: 'Myriad Pro';
 				size: 20px;
 			};
+
+			@media screen and(max-width: 1024px) {
+				font: {
+					size: 17px;
+				};
+			}
 		}
 
 		.about-us__description__cards{
@@ -46,11 +113,23 @@
 			width: 100%;
 			height: auto;
 
+			@media screen and(max-width: 1440px) {
+				width: 90%;
+			}
+
 			.about-us__description__card{
 				text-align: center;
 				width: 25%;
 				justify-content: center;
 				align-items: center;
+
+				@media screen and(max-width: 1440px) {
+					width: 30%;
+				}
+
+				@media screen and(max-width: 1024px) {
+					width: auto;
+				}
 
 				.about-us__description__card__divider{
 					margin: 0;
@@ -61,12 +140,28 @@
 					position: relative;
 					bottom: 10px;
 					transform: rotate(90deg);
+
+					@media screen and(max-width: 1440px) {
+						width: 17px;
+						bottom: 7px;
+					}
 				}
 
 				img{
 					padding: 0;
 					margin: 20px 0 20px 0;
 					border-radius: 50%;
+
+					@media screen and(max-width: 1440px) {
+						margin: 15px 0 15px 0;
+						width: 120px;
+						height: 120px;
+					}
+
+					@media screen and(max-width: 1024px) {
+						width: 80px;
+						height: 80px;
+					}
 				}
 			}
 		}

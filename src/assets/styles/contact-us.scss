@@ -4,11 +4,28 @@
 	padding-top: 200px;
 	background: #0A2E36;
 	align-items: center;
+	padding-bottom: 200px;
+
+	@media screen and(max-width: 1440px) {
+		width: 1440px;
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
+	}
 
 	.contact-us__heading__wrap{
 		justify-content: center;
 		align-items: center;
 		width: 30%;
+
+		@media screen and(max-width: 720px) {
+			width: 90%;;
+		}
 
 		h2.contact-us__heading{
 				color: white;
@@ -29,43 +46,155 @@
 		}
 	}
 
-	.contact-us__form__wrap__form{
-		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1f 3fr 1fr;
-		grid-template-areas: 'name category'
-							'phone country'
-							'email email'
-							'message message'
-							'submit submit';
+	.contact-us__form__wrap{
+		width: 60%;
+		justify-content: space-between;
+		align-items: center;
 
-		#contact-us_name{
-			grid-area: name;
+		input, select{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			border: 1px solid #4E6066;
+			border-radius: 3px;
+			background: transparent;
+			width: 80%;
+			height: 30px;
+			margin: 0 auto;
+			color: #4E6066;
+			vertical-align: bottom;
+			font:{
+				family: 'Myriad Pro';
+				size: 16px;
+				weight: bold;
+			};
 		}
 
-		#contact-us_category{
-			grid-area: category;
+		@media screen and(max-width: 720px) {
+			width: 100%;
+			height: auto;
+			justify-content: center;
 		}
 
-		#contact-us_phone{
-			grid-area: phone;
-		}
+		form{
+			background: blue;
+			padding: 0;
+			background: transparent;
+			width: 70%;
+			height: 500px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1f 3fr 1fr;
+			grid-template-areas: 'name category'
+								'phone country'
+								'email email'
+								'message message'
+								'submit submit';
 
-		#contact-us_country{
-			grid-area: country;
-		}
+			@media screen and(max-width: 720px) {
+				margin: 0 auto;
+				width: 100%;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+				grid-template-areas: 'name'
+									'phone'
+									'email'
+									'country'
+									'category'
+									'message'
+									'submit';
+			}
 
-		#contact-us_email{
-			grid-area: email;
-		}
+			#contact-us_name{
+				grid-area: name;
+				margin-bottom: 50px;
 
-		#contact-us_message{
-			grid-area: message;
-		}
+				@media screen and(max-width: 720px) {
+					margin-bottom: 20px;
+				}
+			}
 
-		#contact-us_submit{
-			grid-area: submit;
+			#contact-us_category{
+				grid-area: category;
+				margin-bottom: 50px;
+
+				@media screen and(max-width: 720px) {
+					margin-bottom: 20px;
+				}
+			}
+
+			#contact-us_phone{
+				grid-area: phone;
+				margin-bottom: 40px;
+
+				@media screen and(max-width: 720px) {
+					margin-bottom: 20px;
+				}
+			}
+
+			#contact-us_country{
+				grid-area: country;
+				margin-bottom: 40px;
+
+				@media screen and(max-width: 720px) {
+					margin-bottom: 20px;
+				}
+			}
+
+			#contact-us_email{
+				grid-area: email;
+				width: 90%;
+				height: 100px;
+
+				@media screen and(max-width: 720px) {
+					width: 80%;
+					height: 40px;
+					margin-bottom: 25px;
+				}
+			}
+
+			#contact-us_message{
+				grid-area: message;
+				width: 90%;
+				height: 200px;
+
+				@media screen and(max-width: 720px) {
+					width: 80%;
+					height: 180px;
+				}
+			}
+
+			.contact-us__form__submit__button-wrap{
+				width: 95%;
+				grid-area: submit;
+				justify-content: flex-end;
+
+				@media screen and(max-width: 720px) {
+					width: 100%;
+					justify-content: center;
+				}
+			}
+
+			button#contact-us_submit{
+				margin-top: 50px;
+				width: 120px;
+				height: 60px;
+				background: #9A5437;
+				border: none;
+				border-radius: 3px;
+				color: #E1D0CB;
+				text-transform: capitalize;
+				text-align: center;
+				font:{
+					family: 'Myriad Pro';
+					size: 17px;
+					weight: bold;
+				};
+
+				@media screen and(max-width: 720px) {
+					width: 350px;
+				}
+			}
 		}
 	}
 }

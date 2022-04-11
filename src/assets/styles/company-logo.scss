@@ -7,7 +7,10 @@
 	height: 600px;
 	padding-right: 100px;
 	padding-bottom: 60px;
-	background: #B6BDBF;
+	background: url('img/hakkimizda.jpg'), linear-gradient(270deg, #0F1F2F, #2A5A8E);
+	background-blend-mode: lighten;
+	background-repeat: no-repeat;
+	background-position: center center;
 
 	h2{
 		color: #FDF9F7;
@@ -15,6 +18,15 @@
 			size: 60px;
 			family: 'Glowgirl Regular';
 		};
+
+		@media screen and(max-width: 1400px) {
+			margin-bottom: 100px;
+			color: #071137;
+			font: {
+				size: 70px;
+				weight: bold;
+			};
+		}
 	}
 
 	h3{
@@ -23,5 +35,28 @@
 			size: 38px;
 			family: 'Glowgirl Regular';
 		};
+
+		@media screen and(max-width: 1400px) { 
+			color: #071137;
+			font: {
+				size: 40px;
+				weight: bold;
+			};
+		}
+	}
+
+	@media screen and(max-width: 1400px) {
+		width: 1440px;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(270deg, #0F1F2F, #2A5A8E);
+	}
+
+	@media screen and(max-width: 1024px) {
+		width: 1024px;
+	}
+
+	@media screen and(max-width: 720px) {
+		width: 720px;
 	}
 }
